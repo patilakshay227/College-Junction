@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        
+        
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/collegejunction</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    	
+    	<property name="hbm2ddl.auto">update</property>
+    	<property name="show_sql">true</property>
+    	
+    	
+    	<mapping class="entities.Bus"/>
+    	<mapping class="entities.Stops"/>
+    	<mapping class="entities.Poetry"/>
+    	<mapping class="entities.Photography"/>
+    	<mapping class="entities.Videos"/>
+    	<mapping class="entities.Events"/>
+    	<mapping class="entities.Workshops"/>
+    	<mapping class="entities.News"/>
+    	<mapping class="entities.Notices"/>
+    	<mapping class="entities.Research"/>
+    	<mapping class="entities.MotivationalThought"/>
+    	<mapping class="entities.BlogPost"/>
+    	<mapping class="entities.Ebooks" /> 
+    	<mapping class="entities.VideoLectures"/>
+    	
+    	<mapping class="users.Faculty"/>
+    	<mapping class="users.Dean"/>
+    	<mapping class="users.Director"/>
+    	<mapping class="users.Student"/>
+    	<mapping class="users.TPO"/>
+    	
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,44 @@
+.show-menu {
+    position: fixed;
+    z-index: 999;
+    top: 50px;
+    right: 60px;
+    text-align: center;
+}
+
+.show-menu a:hover, .show-menu a {
+    font: normal normal 100 50px/30px 'Fira Sans', sans-serif;
+    border: 1px solid rgba(37,58,68,.15);
+    text-decoration: none;
+	line-height: 65px;
+    border-radius: 70px;
+    background: #fff;
+    display: block;
+    color: #455a64;
+    width: 70px;
+    height: 70px;
+    padding: 0px;
+    outline: none;
+}
+.logo{
+                width:250px;
+                height:145px;
+                position:absolute;
+               
+                background:transparent url(images/logo.png) no-repeat top left;
+            }
+#templatemo_home {
+
+    padding-bottom: 130px;
+    color: #fff;
+}
+#templatemo_home .templatemo_home_inner_wapper {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#templatemo_home p a:hover {
+    background-color: rgba(255,255,255,.75);
+    border-bottom: 0px dotted #000;
+}
